@@ -1,0 +1,98 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, rgb(175, 238, 255), rgb(99, 203, 241));
+    overflow: hidden;
+}
+
+body * {
+    font-family: cursive;
+}
+
+h1 {
+    color: white;
+    padding: 20px;
+    background-color: rgb(0, 83, 139);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+p {
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+    transform: translateY(50vh);
+    padding: 20px;
+    background-color: rgb(0, 83, 139);
+    transition: 1s;
+}
+
+#p {
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+    transform: translateY(0px);
+    padding: 20px;
+    background-color: rgb(0, 83, 139);
+    transition: 1s;
+}
+
+button {
+    background-color: rgb(211, 0, 0);
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0;
+    transition: 0.1s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+button:active {
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+#cakeImg {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    animation-duration: 11.5s;
+    transform: translateX(-70vw);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation-name: walkto; */
+}
+
+#cakeimg {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    /* animation-duration: 11.5s;
+    /* transform: translateX(-70vw); */
+    /* animation-timing-function: linear;
+    animation-fill-mode: forwards; */ 
+    /* animation-name: walkto; */
+
+}
+
+@keyframes walkto {
+    0% {
+        transform: translateX(-70vw);}
+        /* content: url("cake_walk.webp");} */
+    100% {
+        transform: translateX(0vw);}
+        /* content: url("cake_give.webp");} */
+}
